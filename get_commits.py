@@ -1,17 +1,10 @@
-from asyncore import read
 import json
-from lib2to3.pgen2 import token
 import os
 import re
-from urllib import request
-import requests as r
 import requests
-import argparse
-import sys
 import random
 import datetime
 import time
-from filter import read_txt
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 

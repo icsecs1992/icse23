@@ -1,4 +1,3 @@
-from hashlib import new
 import os, json
 import pandas as pd
 import re, csv

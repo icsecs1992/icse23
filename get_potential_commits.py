@@ -1,7 +1,3 @@
-
-import this
-from numpy import diff
-from filter import read_txt, write_list_to_txt4
 import os
 from git import Repo
 import subprocess

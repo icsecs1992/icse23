@@ -29,7 +29,7 @@ Then cd to the root folder of the project, and run:
 python fetch_commits.py
 ```
 
-Once you downloaded all vulnerability fixing commits, manual inspection is required to label them based on [CWE](https://cwe.mitre.org/) vulnerability categories.
+Once you downloaded all vulnerability fixing commits, manual inspection is required to label them based on [CWE](https://cwe.mitre.org/) vulnerability categories. 
 
 ### 2. Running static checkers
 

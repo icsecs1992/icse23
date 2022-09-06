@@ -15,13 +15,23 @@ git 3.1.18
 ```
 The vulnerability fixing commits for the studied ML libraries can be found under the ```data/vic_vfs``` directory. But, in order to reproduce the commits, please run the following script:
 
+### 1. Extracting vulnerability fixing commits
+
+First, you need to clone the repository from Github. Please run the following command:
+
+```
+git clone https://github.com/icsecs1992/icse23.git
+```
+
+Then cd to the root folder of the project, and run:
+
 ```
 python fetch_commits.py
 ```
 
 Once you downloaded all vulnerability fixing commits, manual inspection is required to label them based on [CWE](https://cwe.mitre.org/) vulnerability categories.
 
-### 1. Running static checkers
+### 2. Running static checkers
 
 In this paper, we use four widely-used and popular static vulnerability detectors including [Flawfinder](https://dwheeler.com/flawfinder/), [RATS](https://github.com/andrew-d/rough-auditing-tool-for-security), [Cppcheck](https://cppcheck.sourceforge.io/), and [Facebook Infer](https://fbinfer.com/). We apply these detectors on commit files (written in C/C++) and use two well-known mapping techniques to find potential vulnerability candidates. First three detectors are in the same script and Infer is implemented in separate script. To run Flawfinder, RATS, and Cppcheck, please use the following steps:
 

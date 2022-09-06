@@ -39,6 +39,14 @@ Once you executed the command, the results will be generated under ```ICSE23/det
 
 Infer is isolated because it needs compilation commands to run commit files. The compilation commands are available at ```compilation_database/compile_commands_pytorch.json```. 
 
+First, change the directory to ```detectors/infer/run_infer_vfc.py```. Then run:
+
+```
+python detectors/infer/run_infer_vfc.py
+```
+The results will be generated under ```ICSE23/detection_results```. 
+
+Please run the following script to prepare the results:
 
 
 

@@ -180,7 +180,7 @@ def get_vul_freq():
                     vul_freq_data = vul_freq_data + [msg]
                     vul_freq_data = [row['id']] + vul_freq_data
 
-                    with open('vul_frequency.csv', 'a', newline='\n') as fd:
+                    with open('vul_frequency2.csv', 'a', newline='\n') as fd:
                         writer_object = csv.writer(fd)
                         writer_object.writerow(vul_freq_data)
 
